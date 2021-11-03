@@ -51,7 +51,7 @@ export LC_CTYPE="en_US.UTF-8"
 export ICLOUD_DRIVE="$HOME/icloud-drive"
 
 ## Source ENV variables
-source "$ICLOUD_DRIVE/dotfiles/.env"
+##source "$ICLOUD_DRIVE/dotfiles/.env"
 
 ## Set fzf to use rg like so for ctrl-t in shell:
 export FZF_DEFAULT_COMMAND='rg --files --ignore --hidden --follow --glob "!.git/*"'

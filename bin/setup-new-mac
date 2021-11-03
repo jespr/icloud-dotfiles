@@ -7,7 +7,7 @@ cd "$HOME"
 [ ! -L icloud-drive ] && ln -s "$HOME/Library/Mobile Documents/com~apple~CloudDocs" icloud-drive
 [ ! -L lolbrary ] && ln -s "$HOME/Library" lolbrary
 
-for link in .gemrc .pryrc .gitconfig .gitignore_global .inputrc .profile .bashrc .vim .vimrc bin .vscode .fzf.bash .tmux.conf; do
+for link in .gemrc .pryrc .gitconfig .gitignore_global .inputrc .zprofile .zshrc .vim .vimrc bin .vscode .fzf.bash .tmux.conf; do
   if [ -L "$HOME/$link" ]; then
     echo "Link '$link' already exists"
   else
@@ -93,5 +93,5 @@ rbenv global "$RUBY_VERSION"
 gem install bundler
 
 # Run profile
-source .profile
+source .zprofile
 
